@@ -1,1 +1,8 @@
-API RESTful para controle de estoque, construída em .NET Core com arquitetura DDD e Entity Framework. Suporta operações CRUD, autenticação e integração com bancos de dados relacionais. Utilizei o SQLite
+🧾 Controle de Estoque - Projeto em andamento
+
+API RESTful desenvolvida em .NET Core, utilizando arquitetura DDD e Entity Framework para o gerenciamento de estoque.
+
+🛠️ Tecnologias Utilizadas
+.NET Core
+Entity Framework Core
+SQLite
