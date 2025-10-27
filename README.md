@@ -1,0 +1,1 @@
+API RESTful para controle de estoque, construída em .NET Core com arquitetura DDD e Entity Framework. Suporta operações CRUD, autenticação e integração com bancos de dados relacionais. Utilizei o SQLite
