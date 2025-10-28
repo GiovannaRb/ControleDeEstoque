@@ -1,6 +1,9 @@
 ﻿using ControleDeEstoque.API.Domain.Models;
+using ControleDeEstoque.Domain.Dtos;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace ControleDeEstoque.API.Interfaces
+namespace ControleDeEstoque.Domain.Interfaces
 {
     public interface IEstoqueRepository
     {

@@ -8,6 +8,9 @@ namespace ControleDeEstoque.API.Domain.Models
         public int Id { get; set; }
 
         [Required, MaxLength(50)]
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
+
+        [Required, MaxLength(250)]
+        public string? Descricao { get; set; }
     }
 }

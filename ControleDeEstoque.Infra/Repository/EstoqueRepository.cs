@@ -1,6 +1,7 @@
 ﻿using ControleDeEstoque.API.Data;
 using ControleDeEstoque.API.Domain.Models;
-using ControleDeEstoque.API.Interfaces;
+using ControleDeEstoque.Domain.Dtos;
+using ControleDeEstoque.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ControleDeEstoque.Application\ControleDeEstoque.Application.csproj" />
     <ProjectReference Include="..\ControleDeEstoque.Domain\ControleDeEstoque.Domain.csproj" />
   </ItemGroup>
 

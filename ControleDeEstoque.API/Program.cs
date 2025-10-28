@@ -1,7 +1,7 @@
 using ControleDeEstoque.API.Data;
-using ControleDeEstoque.API.Interfaces;
 using ControleDeEstoque.API.Repository;
-using ControleDeEstoque.API.Services;
+using ControleDeEstoque.Application.Services;
+using ControleDeEstoque.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

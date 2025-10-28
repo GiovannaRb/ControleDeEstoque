@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeEstoque.Domain", "ControleDeEstoque.Domain\ControleDeEstoque.Domain.csproj", "{CC726CA2-2D3A-58FA-F3B0-0CD234E3FFA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeEstoque.Infra", "ControleDeEstoque.Infra\ControleDeEstoque.Infra.csproj", "{BF7E2174-65CE-D784-61FD-3EF9AA8B05B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{618E2067-61C9-4618-A182-FC39AB52F13C} = {618E2067-61C9-4618-A182-FC39AB52F13C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeEstoque.Application", "ControleDeEstoque.Application\ControleDeEstoque.Application.csproj", "{618E2067-61C9-4618-A182-FC39AB52F13C}"
 EndProject

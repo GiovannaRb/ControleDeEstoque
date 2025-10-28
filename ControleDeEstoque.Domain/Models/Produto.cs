@@ -9,14 +9,16 @@ namespace ControleDeEstoque.API.Domain.Models
         public int Id { get; set; }
 
         [Required, MaxLength(100)]
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
 
         [ForeignKey("Descricao")]
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
 
-        public int Quantidade { get; set; }
+        public int? Quantidade { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
-        public decimal Preco { get; set; }
+        public decimal? Preco { get; set; }
+
+        public string? Categoria { get; set; }
     }
 }

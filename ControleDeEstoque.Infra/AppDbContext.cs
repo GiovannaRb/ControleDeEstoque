@@ -16,8 +16,8 @@ namespace ControleDeEstoque.API.Data
 
             // Dados iniciais para teste
             modelBuilder.Entity<Categoria>().HasData(
-                new Categoria { Id = 1, Nome = "Informática" },
-                new Categoria { Id = 2, Nome = "Escritório" }
+                new Categoria { Id = 1, Nome = "Informática", Descricao = "Informática" },
+                new Categoria { Id = 2, Nome = "Escritório", Descricao = "Escritório" }
             );
         }
     }

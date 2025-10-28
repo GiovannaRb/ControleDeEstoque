@@ -1,5 +1,6 @@
 using ControleDeEstoque.API.Domain.Models;
-using ControleDeEstoque.API.Interfaces;
+using ControleDeEstoque.Domain.Dtos;
+using ControleDeEstoque.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeEstoque.API.Controllers
@@ -17,17 +18,17 @@ namespace ControleDeEstoque.API.Controllers
         [HttpGet]
         public Task<List<Produto>> ListarProdutos()
         {
-          return _service.ListarProdutos();
+            return _service.ListarProdutos();
         }
 
         [HttpPost]
-        public Task<string> AddProduto(Produto dados)
+        public Task<string> AddProduto(ProdutoDto dados)
         {
             return _service.AddProduto(dados);
         }
 
         [HttpPut]
-        public Task<string> AtualizarProduto(Produto dados)
+        public Task<string> AtualizarProduto(ProdutoDto dados)
         {
             return _service.AtualizarProduto(dados);
         }

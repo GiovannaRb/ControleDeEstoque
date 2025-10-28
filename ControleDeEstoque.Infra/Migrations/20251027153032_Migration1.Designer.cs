@@ -2,6 +2,7 @@
 using ControleDeEstoque.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeEstoque.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251027153032_Migration1")]
+    partial class Migration1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");
@@ -21,11 +24,6 @@ namespace ControleDeEstoque.API.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -40,13 +38,11 @@ namespace ControleDeEstoque.API.Migrations
                         new
                         {
                             Id = 1,
-                            Descricao = "Informática",
                             Nome = "Informática"
                         },
                         new
                         {
                             Id = 2,
-                            Descricao = "Escritório",
                             Nome = "Escritório"
                         });
                 });
@@ -58,9 +54,11 @@ namespace ControleDeEstoque.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Categoria")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Descricao")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
@@ -68,10 +66,10 @@ namespace ControleDeEstoque.API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal?>("Preco")
+                    b.Property<decimal>("Preco")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<int?>("Quantidade")
+                    b.Property<int>("Quantidade")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
