@@ -6,7 +6,10 @@ namespace ControleDeEstoque.API.Domain.Models
     public class Produto
     {
         [Key]
-        public int Id { get; set; }
+        public int? Id { get; set; }
+
+        [Required, MaxLength(100)]
+        public string? Codigo { get; set; }
 
         [Required, MaxLength(100)]
         public string? Nome { get; set; }
