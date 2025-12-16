@@ -1,4 +1,4 @@
-﻿namespace ControleDeEstoque.Domain.Dtos
+﻿namespace ControleDeEstoque.Domain.Models.Dtos
 {
     public class CategoriaDto
     {

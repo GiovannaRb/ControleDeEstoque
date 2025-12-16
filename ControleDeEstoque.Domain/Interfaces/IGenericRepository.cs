@@ -1,5 +1,4 @@
 ﻿using ControleDeEstoque.API.Domain.Models;
-using ControleDeEstoque.Domain.Dtos;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -14,5 +13,6 @@ namespace ControleDeEstoque.Domain.Interfaces
         Task<bool> AddAsync(T entity);
         Task<bool> UpdateAsync(T entity);
         Task<bool> DeleteAsync(T entity);
+        Task<int> SaveChangesAsync();
     }
 }

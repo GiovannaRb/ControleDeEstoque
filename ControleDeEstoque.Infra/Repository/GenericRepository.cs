@@ -1,6 +1,5 @@
 ﻿using ControleDeEstoque.API.Data;
 using ControleDeEstoque.API.Domain.Models;
-using ControleDeEstoque.Domain.Dtos;
 using ControleDeEstoque.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -51,6 +50,10 @@ namespace ControleDeEstoque.API.Repository
         {
             _dbSet.Remove(entity); 
             return await _context.SaveChangesAsync() > 0;
+        }
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync();
         }
     }
 }
