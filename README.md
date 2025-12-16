@@ -78,27 +78,13 @@ ControleDeEstoque.API/estoque.db
    ```bash
    dotnet run
    ```
----
-
-```bash
-Obs: O Swagger já está devidamente configurado para abrir logo após o projeto ser iniciado no navegador! 
-```
+   ```bash
+   Obs: O Swagger já está devidamente configurado para abrir logo após o projeto ser iniciado no navegador! 
+   ```
 ---
 
 ## 📌 Status do Projeto
 
 🚧 **Em desenvolvimento**
 
-
 ---
-
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**.
-
----
-
-💡 *Projeto desenvolvido com foco em aprendizado contínuo, boas práticas e construção de um portfólio sólido em .NET.*
